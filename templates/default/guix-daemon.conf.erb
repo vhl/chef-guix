@@ -1,0 +1,7 @@
+description "Build daemon for GNU Guix"
+
+start on runlevel [2345]
+
+stop on runlevel [016]
+
+exec /root/.guix-profile/bin/guix-daemon --build-users-group=guixbuild --substitute-urls='<%= @substitute_urls.join(' ') %>'
