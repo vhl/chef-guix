@@ -98,7 +98,7 @@ end
     <td><tt>'/'</tt></td>
   </tr>
   <tr>
-    <td><tt>load\_path</tt></td>
+    <td><tt>load_path</tt></td>
     <td>Array</td>
     <td>List of directories to search for package recipes</td>
     <td><tt>[]</tt></td>
