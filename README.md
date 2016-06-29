@@ -21,7 +21,7 @@ system supported.
     <td><tt>['guix']['version']</tt></td>
     <td>String</td>
     <td>GNU Guix release version</td>
-    <td><tt>0.10.0</tt></td>
+    <td><tt>'0.10.0'</tt></td>
   </tr>
   <tr>
     <td><tt>['guix']['checksum']</tt></td>
@@ -30,7 +30,7 @@ system supported.
     The SHA256 checksum of the GNU Guix binary tarball corresponding
     to the appropriate version
     </td>
-    <td><tt>0.10.0</tt></td>
+    <td><tt>'b46cd525102c6189f160bde392a31bb61e3b94fd7bf109885803e6d9a32f2ed3'</tt></td>
   </tr>
   <tr>
     <td><tt>['guix']['substitute_urls']</tt></td>
