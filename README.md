@@ -140,7 +140,7 @@ WRITEME
 
 ## Usage
 
-### chef-guix::default
+### guix::default
 
 Include `guix` in your node's `run_list`:
 
