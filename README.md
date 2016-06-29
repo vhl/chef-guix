@@ -113,8 +113,10 @@ end
     <td><tt>grafts</tt></td>
     <td>Boolean</td>
     <td>
-    Whether or not to use
-    [grafts](https://www.gnu.org/software/guix/manual/html_node/Security-Updates.html)
+      Whether or not to use
+      <a href="https://www.gnu.org/software/guix/manual/html_node/Security-Updates.html">
+        grafts
+      </a>
     </td>
     <td><tt>true</tt></td>
   </tr>
