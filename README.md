@@ -46,6 +46,96 @@ system supported.
   </tr>
 </table>
 
+## Resources
+
+### guix_package
+
+Install/remove one or more packages from a user's package profile.
+Supported actions are <tt>:install</tt> and <tt>remove</tt>.
+
+#### Example
+
+```ruby
+guix_package 'ruby' do
+  action :install
+end
+
+guix_package 'install a bunch of fun stuff' do
+  packages ['ruby', 'emacs', 'git']
+  action :install
+end
+```
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td><tt>name</tt></td>
+    <td>String</td>
+    <td>Description of transaction (or package name if <tt>packages</tt> is omitted)</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td><tt>packages</tt></td>
+    <td>Array</td>
+    <td>List of package specifications</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td><tt>profile</tt></td>
+    <td>String</td>
+    <td>File name of the package profile to use for the transaction</td>
+    <td>User's default profile</td>
+  </tr>
+  <tr>
+    <td><tt>cwd</tt></td>
+    <td>String</td>
+    <td>Directory to perform the transaction within</td>
+    <td><tt>'/'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>load\_path</tt></td>
+    <td>Array</td>
+    <td>List of directories to search for package recipes</td>
+    <td><tt>[]</tt></td>
+  </tr>
+  <tr>
+    <td><tt>substitutes</tt></td>
+    <td>String</td>
+    <td>Whether or not to use pre-built binaries</td>
+    <td><tt>true</tt></td>
+  </tr>
+  <tr>
+    <td><tt>grafts</tt></td>
+    <td>Boolean</td>
+    <td>
+    Whether or not to use
+    [grafts](https://www.gnu.org/software/guix/manual/html_node/Security-Updates.html)
+    </td>
+    <td><tt>true</tt></td>
+  </tr>
+  <tr>
+    <td><tt>user</tt></td>
+    <td>String</td>
+    <td>User to perform the transaction</td>
+    <td><tt>'root'</tt></td>
+  </tr>
+  <tr>
+    <td><tt>group</tt></td>
+    <td>String</td>
+    <td>Group to perform the transaction</td>
+    <td><tt>'root'</tt></td>
+  </tr>
+</table>
+
+### guix_environment
+
+WRITEME
+
 ## Usage
 
 ### chef-guix::default
