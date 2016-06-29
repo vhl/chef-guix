@@ -51,7 +51,7 @@ system supported.
 ### guix_package
 
 Install/remove one or more packages from a user's package profile.
-Supported actions are <tt>:install</tt> and <tt>remove</tt>.
+Supported actions are `:install` and `:remove`.
 
 #### Example
 
