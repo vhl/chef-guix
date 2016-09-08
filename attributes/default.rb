@@ -16,12 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-default['guix']['version'] = '0.10.0'
-default['guix']['checksum'] = 'b46cd525102c6189f160bde392a31bb61e3b94fd7bf109885803e6d9a32f2ed3'
-default['guix']['substitute_urls'] = [
-  'https://mirror.hydra.gnu.org',
-  'https://hydra.gnu.org'
-]
+default['guix']['version'] = '0.11.0'
+default['guix']['checksum'] = '663f035d0ff6190bb0acf0175eb92c3ace81b2cacd66fd707e0753544bc74923'
+default['guix']['substitute_urls'] = ['https://mirror.hydra.gnu.org']
 
 default['guix']['substitute_keys'] = [
   <<-EOF
