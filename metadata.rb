@@ -23,4 +23,4 @@ license          'Apache 2.0'
 description      'Provides functional package management with GNU Guix'
 long_description 'The Guix cookbook provides access to the functional
 package management features of GNU Guix from within Chef recipes.'
-version          '0.1.0'
+version          '0.1.1'
